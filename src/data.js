@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 'gamehub', number: '01', category: 'FEATURED PROJECT · BUILT WITH AI', title: 'Good company.\nA game I brought to life.', shortTitle: 'NaijaGameHub', description: 'An AI-assisted build you can actually play. Browser games for friends, family, and a little friendly competition.', tags: ['AI-assisted development', 'Browser games', 'Deployed on Vercel'], type: 'gamehub',
+    id: 'gamehub', kind: 'product', number: '01', category: 'LIVE PRODUCT · BUILT WITH AI', title: 'Good company.\nA game I brought to life.', shortTitle: 'NaijaGameHub', description: 'An AI-assisted build you can actually play. Browser games for friends, family, and a little friendly competition.', tags: ['AI-assisted development', 'Browser games', 'Deployed on Vercel'], type: 'gamehub',
     intro: 'NaijaGameHub is a game website I built using AI and deployed on Vercel. Open the live site to explore the games and try the experience for yourself.',
     challenge: 'Make a playful idea tangible: a browser experience people can visit, understand, and explore together.',
     approach: 'I used AI as part of the development process to build the site. The public experience brings game discovery and shared-screen play together, with a searchable catalogue and game categories.',
