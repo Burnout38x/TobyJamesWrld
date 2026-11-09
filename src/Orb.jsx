@@ -20,7 +20,7 @@ export default function Orb({ paused }) {
       ctx.clearRect(0, 0, width, height);
       const size = Math.min(width, height) * .365, cx = width / 2, cy = height / 2;
       const glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, size * 1.4);
-      glow.addColorStop(0, 'rgba(186,214,119,.14)'); glow.addColorStop(.7, 'rgba(122,147,93,.035)'); glow.addColorStop(1, 'rgba(122,147,93,0)');
+      glow.addColorStop(0, 'rgba(132,159,197,.10)'); glow.addColorStop(.7, 'rgba(112,139,180,.035)'); glow.addColorStop(1, 'rgba(112,139,180,0)');
       ctx.fillStyle = glow; ctx.fillRect(0, 0, width, height);
       const projected = points.map(([x, y, z], i) => {
         const a = angle + y * .25, nx = x * Math.cos(a) - z * Math.sin(a), nz = x * Math.sin(a) + z * Math.cos(a);
@@ -30,13 +30,13 @@ export default function Orb({ paused }) {
       }).sort((a,b) => a.z - b.z);
       ctx.save(); ctx.translate(cx,cy); ctx.rotate(-.45);
       for (let j = 0; j < 3; j++) {
-        ctx.strokeStyle = `rgba(212,235,166,${.12 + j * .04})`; ctx.lineWidth = .7;
+        ctx.strokeStyle = `rgba(195,210,231,${.12 + j * .04})`; ctx.lineWidth = .7;
         ctx.beginPath(); ctx.ellipse(0, 0, size * (1.26 + j * .055), size * (.32 + j * .04), 0, 0, Math.PI * 2); ctx.stroke();
       }
       ctx.restore();
       projected.forEach(p => {
         const opacity = .15 + (p.z + 1) / 2 * .75;
-        ctx.fillStyle = p.i % 23 === 0 ? `rgba(230,255,172,${opacity})` : `rgba(195,211,174,${opacity})`;
+        ctx.fillStyle = p.i % 23 === 0 ? `rgba(226,199,155,${opacity})` : `rgba(186,204,230,${opacity})`;
         ctx.beginPath(); ctx.arc(p.x, p.y, p.i % 23 === 0 ? 2.1 : .65 + (p.z + 1) * .48, 0, Math.PI * 2); ctx.fill();
       });
       if (!paused && !reduced.matches && visible && !document.hidden) frame = requestAnimationFrame(draw);

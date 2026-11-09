@@ -42,3 +42,7 @@ A Git-connected project deploys future changes automatically. Use Vercel's deplo
 The workflow is an **illustrative walkthrough**, not live model execution. Professional projects are summarized from the supplied CV; no proprietary source, internal screenshots, prompts, or API keys are included. Metrics are user-reported rather than independently benchmarked. The ~88% reduction refers to always-on prompt size, not total API spend.
 
 Fonts are self-hosted via Fontsource (DM Sans and Instrument Serif, SIL OFL); framework and icons use permissive licenses. No analytics, forms backend, model calls, or external font requests are included. Motion respects the system's reduced-motion preference, with an additional ambient-animation pause control. Contact opens an email client; Copy email uses the browser clipboard with a mailto fallback.
+
+## Brand and portrait
+
+`BRAND.md` documents the portrait-led navy, ivory, slate, and brass palette, type choices, motion behavior, and references. `public/james-akintunde.jpg` is the original user-provided portrait, displayed unchanged.
