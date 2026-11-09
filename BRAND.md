@@ -59,3 +59,9 @@ Research reviewed November 8, 2026:
 Core foreground/background ratios calculated using WCAG relative luminance: ink/paper 12.96:1; slate/paper 5.09:1; brass/midnight 8.16:1; deep brass/paper 4.67:1; light slate/midnight 9.25:1; contact copy/sand 5.58:1. All exceed 4.5:1 for normal text. Decorative illustration labels are not relied on to communicate project facts.
 
 Final palette rationale: navy provides hierarchy and matches the portrait; ivory carries most reading; slate separates supporting content; warm sand creates a quiet contact section; brass is reserved for small highlights. Related-color gradients are confined to illustration panels, not paragraphs. This retains a distinctive appearance while limiting simultaneous contrast, color variation, and motion.
+
+## Personal style refinement: soft, playful components
+
+User preference: curved, bubbly components and an interface that feels alive. Use 24–38px radii for large surfaces, 16–22px for nested panels, and pill shapes for buttons and tags. Keep the navy/ivory/slate/brass color roles. Hover and press feedback use short transform transitions; cards lift slightly, buttons compress, and GameHub artwork responds as a group. No new perpetual animation or scroll hijacking. Existing reduced-motion support and saved motion control remain available.
+
+NaijaGameHub is the first, full-width project because it offers a direct playable demonstration of AI-assisted development. Its image is an actual screenshot of the public site; its link opens the live application. Game catalogue descriptions are limited to publicly observed features and the user's authorship statement, without invented implementation claims.
